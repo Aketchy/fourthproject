@@ -1,0 +1,162 @@
+/* Apply Roboto font to entire page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #0f65f8;
+    padding: 1rem;
+  }
+  
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make navbar inline */
+    justify-content: center;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-list a:hover {
+    color: #ff69b4; /* Hot pink hover */
+  }
+  
+  /* Sections */
+  .section {
+    padding: 60px 20px;
+    text-align:center;
+  }
+  
+  .about-section {
+    background-color: #fff;
+  }
+
+  #about img {
+    width: 800px;
+    height: 400px;
+    border: 2px solid #333; /Adds a border */
+  }
+
+  
+  
+  .project-section {
+    background-color: #e3f2fd;
+  }
+
+  #project img {
+    width: 800px;
+    height: 400px; 
+    border: 2px solid #333; /Adds a border */
+    
+
+  }
+  
+  .resume-section {
+    background-color: #fff;
+  }
+  
+  .contact-section {
+    background-color: #e1bee7;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #ff69b4;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  /* ===========================
+   Responsive Design (Mobile First)
+   =========================== */
+
+@media (max-width: 768px) {
+    /* Make navbar stack vertically on small screens */
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    /* Sections */
+    .section {
+      padding: 40px 10px;
+    }
+  
+    /* Contact Form */
+    form {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    form input, form textarea {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Smaller phones */
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .nav-list a {
+      font-size: 18px;
+    }
+  
+    form button {
+      width: 100%;
+    }
+  }
+  
